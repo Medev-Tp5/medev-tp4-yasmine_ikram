@@ -59,9 +59,14 @@ public class Board implements Serializable {
             System.out.print(i + " ");
         }
         System.out.println();
+        System.out.print(" +-");
+        for (int i = 0; i < size; i++) {
+            System.out.print("--");
+        }
+        System.out.println("+");
 
         for (int row = 0; row < size; row++) {
-            System.out.print(row + " ");
+            System.out.print(row + "| ");
             for (int col = 0; col < size; col++) {
                 if (board[row][col] != null) {
                     System.out.print(board[row][col] + " ");
@@ -69,8 +74,13 @@ public class Board implements Serializable {
                     System.out.print(". ");
                 }
             }
-            System.out.println();
+            System.out.println("|");
         }
+        System.out.print(" +-");
+        for (int i = 0; i < size; i++) {
+            System.out.print("--");
+        }
+        System.out.println("+");
     }
     
     public int getSize() {
