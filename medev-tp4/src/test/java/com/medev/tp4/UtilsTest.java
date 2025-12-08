@@ -45,7 +45,6 @@ public class UtilsTest {
     public void testConcatWords() {
         System.out.println("concatWords");
         assertEquals("HelloWorld", Utils.concatWords(new String[]{"Hello", "World"}));
-
     }
 
     /**
@@ -59,5 +58,4 @@ public class UtilsTest {
         System.out.println("computing " + factorialOf + "!");
         System.out.println(factorialOf + "! = " + Utils.computeFactorial(factorialOf));
     }
-
 }
