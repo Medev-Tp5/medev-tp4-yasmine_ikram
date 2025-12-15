@@ -30,6 +30,7 @@
         <maven.compiler.release>17</maven.compiler.release>
         <exec.mainClass>com.medev.tp4.MedevTp4</exec.mainClass>
         <sonar.organization>medev-tp5</sonar.organization>
+        <sonar.projectKey>Medev-Tp5_medev-tp4-yasmine_ikram</sonar.projectKey>
         </properties>
     <build>
         <plugins>
