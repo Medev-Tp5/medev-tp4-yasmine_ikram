@@ -29,6 +29,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>24</maven.compiler.release>
         <exec.mainClass>com.medev.tp4.MedevTp4</exec.mainClass>
+        <sonar.organization>medev-tp5</sonar.organization>
         </properties>
     <build>
         <plugins>
