@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.medev.tp4","l":"Board"},{"p":"com.medev.tp4","l":"Color"},{"p":"com.medev.tp4","l":"Game"},{"p":"com.medev.tp4","l":"Move"},{"p":"com.medev.tp4","l":"Piece"},{"p":"com.medev.tp4","l":"Player"}];updateSearchResults();

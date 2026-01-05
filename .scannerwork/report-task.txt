@@ -1,0 +1,7 @@
+organization=medev-tp5
+projectKey=Medev-Tp5_medev-tp4-yasmine_ikram
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.78092
+dashboardUrl=https://sonarcloud.io/dashboard?id=Medev-Tp5_medev-tp4-yasmine_ikram
+ceTaskId=AZuO9LdupsyxC7tYCnue
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZuO9LdupsyxC7tYCnue

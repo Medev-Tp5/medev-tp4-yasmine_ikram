@@ -1,0 +1,102 @@
+
+0com.medev.tp4.Piece#toString()Ljava/lang/String;q
+gC:/Users/user/Documents/NetBeansProjects/medev-tp4-yasmine_ikram/src/main/java/com/medev/tp4/Piece.java$ $("4"8*u
+2(0 ((3a
+_
+(0 ((3
+%9java.lang.String"__id*5
+
+__unknown_file (
+
+%11java.lang.String*
+1*u
+3(* ((-a
+_
+(* ((-
+%9java.lang.String"__id*5
+
+__unknown_file (
+
+%10java.lang.String*
+1*Á
+4( ((m
+k
+( ((
+%6com.medev.tp4.Color"__id*>
+
+__unknown_file ("* 
+com.medev.tp4.Piece"
+colorQ
+O
+( (('
+%7com.medev.tp4.Color"__id*"
+
+__unknown_file (
+""ç
+ä
+( (('
+%8boolean"	__compare*
+( ((
+==*'
+( ((
+
+%6com.medev.tp4.Color*'
+( (('
+
+%7com.medev.tp4.Color*
+2
+3*3
+5& &(4"$
+& &(4
+
+%3java.lang.String*t
+6&0 &(3`
+^
+&0 &(3
+%3java.lang.String"__id*4
+
+__unknown_file (
+
+%5java.lang.String*
+5*t
+7&* &(-`
+^
+&* &(-
+%3java.lang.String"__id*4
+
+__unknown_file (
+
+%4java.lang.String*
+5*Á
+8& &(m
+k
+& &(
+%0com.medev.tp4.Color"__id*>
+
+__unknown_file ("* 
+com.medev.tp4.Piece"
+colorQ
+O
+& &('
+%1com.medev.tp4.Color"__id*"
+
+__unknown_file (
+""ç
+ä
+& &('
+%2boolean"	__compare*
+& &(
+==*'
+& &(
+
+%0com.medev.tp4.Color*'
+& &('
+
+%1com.medev.tp4.Color*
+6
+7*3
+1( ((4"$
+( ((4
+
+%9java.lang.StringB
+com.medev.tp4.PieceH

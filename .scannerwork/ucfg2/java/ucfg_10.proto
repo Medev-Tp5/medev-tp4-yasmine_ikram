@@ -1,0 +1,43 @@
+
+5com.medev.tp4.Board#getPiece(II)Lcom/medev/tp4/Piece;q
+gC:/Users/user/Documents/NetBeansProjects/medev-tp4-yasmine_ikram/src/main/java/com/medev/tp4/Board.java* *("1*Ÿ
+1+ +(q
+o
++ +(
+%0com.medev.tp4.Piece[][]"__id*>
+
+__unknown_file ("* 
+com.medev.tp4.Board"
+boardó
+î
++ +(
+%1com.medev.tp4.Piece[]"
+__arrayGet*;
+
+__unknown_file (
+
+%0com.medev.tp4.Piece[][]*"
+
+__unknown_file (
+""ì
+ê
++ +(
+%2com.medev.tp4.Piece"
+__arrayGet*9
+
+__unknown_file (
+
+%1com.medev.tp4.Piece[]*"
+
+__unknown_file (
+"""'
++ +(
+
+%2com.medev.tp4.Piece: 
+
+__unknown_file (
+"": 
+
+__unknown_file (
+""B
+com.medev.tp4.BoardH

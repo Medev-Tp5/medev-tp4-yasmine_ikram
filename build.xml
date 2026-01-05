@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="medev-tp4" default="jar" basedir=".">
+    <!-- Propriétés du projet -->
+    <property name="src.dir" value="src/main/java"/>
+    <property name="test.dir" value="src/test/java"/>
+    <property name="build.dir" value="build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="test.classes.dir" value="${build.dir}/test-classes"/>
+    <property name="dist.dir" value="dist"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="main.class" value="com.medev.tp4.Game"/>
+ <property name="sonar.projectKey" value="Medev-Tp5_medev-tp4-yasmine_ikram" />
+<property name="sonar.organization" value="medev-tp5" />
+<property name="sonar.host.url" value="https://sonarcloud.io" />
+<property name="sonar.sources" value="${src.dir}" />
+<property name="sonar.java.binaries" value="${classes.dir}" />
+
+
+    <path id="compile.classpath">
+        <fileset dir="${lib.dir}">
+            <include name="**/*.jar"/><!-- bibliothèques externes-->
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+
+    <target name="init">
+        <mkdir dir="${classes.dir}"/>
+        <mkdir dir="${test.classes.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" includeantruntime="false" classpathref="compile.classpath"/>
+    </target>
+
+    <target name="test-compile" depends="compile">
+        <javac srcdir="${test.dir}" destdir="${test.classes.dir}" includeantruntime="false">
+            <classpath>
+                <pathelement path="${classes.dir}"/>
+                <path refid="compile.classpath"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="jar" depends="compile">
+        <jar destfile="${dist.dir}/medev-tp4.jar" basedir="${classes.dir}">
+            <manifest>
+                <attribute name="Main-Class" value="${main.class}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="jar">
+        <java jar="${dist.dir}/medev-tp4.jar" fork="true"/>
+    </target>
+    <target name="javadoc" depends="init">
+    <mkdir dir="${build.dir}/docs/api"/>
+    <javadoc sourcepath="${src.dir}" 
+             destdir="${build.dir}/docs/api" 
+             author="true" 
+             version="true" 
+             use="true" 
+             windowtitle="Documentation medev-tp4">
+        <classpath refid="compile.classpath"/>
+    </javadoc>
+</target>
+
+   <target name="test" depends="test-compile">
+    <mkdir dir="${build.dir}/test-reports"/>
+    <java classname="org.junit.platform.console.ConsoleLauncher" fork="true">
+        <classpath>
+            <pathelement path="${classes.dir}"/>
+            <pathelement path="${test.classes.dir}"/>
+            <fileset dir="${lib.dir}">
+                <include name="*.jar"/>
+            </fileset>
+        </classpath>
+        <arg value="--scan-class-path"/>
+        <arg path="${test.classes.dir}"/>
+        <arg value="--reports-dir"/>
+        <arg path="${build.dir}/test-reports"/>
+    </java>
+</target>
+
+<target name="sonar" depends="compile">
+    <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
+        <classpath>
+            <pathelement location="${lib.dir}/sonarqube-ant-task-2.7.0.1612.jar" />
+        </classpath>
+    </taskdef>
+    
+    <sonar:sonar xmlns:sonar="antlib:org.sonar.ant" />
+</target>
+
+</project>
